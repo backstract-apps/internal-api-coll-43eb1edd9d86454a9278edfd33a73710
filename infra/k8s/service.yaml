@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: internal-api-coll-43eb1edd9d86454a9278edfd33a73710-srv
+spec:
+  selector:
+    app: internal-api-coll-43eb1edd9d86454a9278edfd33a73710
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
